@@ -12,11 +12,11 @@ while True:
     
 
 lista.sort(reverse=True)
+print(f'Foram digitados {cont} valores')
+print(f'A lista ordenadar de forma descrescente é {lista}')
 if 5 in lista:
     print('Numero 5 está na lista')
 else:
     print('Numero 5 não está na lista.')
-print(f'Foram digitados {cont} valores')
-print(f'A lista ordenadar de forma descrescente é {lista}')
 
 
