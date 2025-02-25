@@ -46,4 +46,35 @@ def extrato(saldo, extrato):
     print('Não houve transações\n' if not extrato else extrato)
     print('=' * 20)
 
+    
+def criar_usuario (usuarios):
+    cpf = int(input('Digite seu CPF.'))
+    usuarios = filtrar_usuario(cpf, usuarios)
+    nome = input('Informe o nome completo:')
+    
+
+
+
+
+def main ():
+    LIMITE_SAQUE = 3
+    AGENCIA = '0001'
+
+    saldo = 0
+    limite = 500
+    extrato = ''
+    numero_saques = 0
+    usuarios = []
+    contas = []
+
+    while True:
+        opcao = int(menu())
+        
+        if opcao == 1:
+            valor = float(input('Digite o valor que será depositado: R$ '))
+
+            saldo , extrato = depositar(saldo, valor, extrato)
+
+
+
 
